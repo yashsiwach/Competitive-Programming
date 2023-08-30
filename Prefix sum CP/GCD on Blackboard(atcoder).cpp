@@ -68,24 +68,7 @@ int main()
     	}
     }
     //1 2 8
-    //handling the mid element case in 3 elements 
-    int temp=gcd(prefix2[n-1],prefix[0]);
-
-    //calculating max gcd in prefix
-    int max1=0;
-    for(int i=1;i<n;i++)
-    {
-        max1=max(max1,prefix[i]);
-    }
-    //calculating max in sufix array
-    // int max2=0;
-    for(int i=0;i<n-1;i++)
-    {
-        max1=max(max1,prefix2[i]);
-    }
-    //max in both prefix and suffix it the max ans
-    int ans=max(temp,max1);
-    cout<<ans<<endl;
+    
 
     int ans = 0 ;
     
@@ -98,5 +81,6 @@ int main()
       }
       
     }
+    cout<<ans<<endl;
 
 }
