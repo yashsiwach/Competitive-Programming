@@ -18,7 +18,7 @@ void check()
 {
     for(int i = 2; i * i <= num; i++)
     {
-        if(seive[i])
+        if(seive[i])//check only prime numbers
         {
             for(int j = i * i; j <= num; j += i)
             {
