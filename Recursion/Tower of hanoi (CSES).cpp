@@ -8,6 +8,10 @@
 // Result:	ACCEPTED
 
 // just find the helper in n-1 move and done !!!
+
+//step 1- S H D
+//step 2- S D H
+//step 3- H S D
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
