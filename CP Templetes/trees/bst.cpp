@@ -31,6 +31,7 @@ template<typename T> T binpow(T base,T power){ ll ans=1; while(power){if(power&1
 /*----------------------------------------------------------------------------*/
 class node
 {
+public:
     int val;
     node*left;
     node*right;
@@ -40,8 +41,8 @@ class node
         this->left=nullptr;
         this->right=nullptr;
     }
-}
-node*insertbst(node*&root,int val)
+};
+node* insertbst(node*&root,int val)
 {
     
     if(root==NULL)
@@ -109,10 +110,7 @@ int main()
     cin.tie(0);
     node* root=NULL;
     buildbst(root);
-    levelordertreversal(root);
-    
-
-    
+    levelordertreversal(root); 
     
 }
 
