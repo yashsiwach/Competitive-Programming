@@ -40,9 +40,6 @@ void solve(int n,char a,char b,char c)
 }
 int main()
 {
-//    freopen("Input.txt","r",stdin);
-//    freopen("output.txt","w",stdout);
-//    freopen("Error.txt","w",stderr);
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 

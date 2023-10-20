@@ -42,6 +42,7 @@ public:
         this->right=nullptr;
     }
 };
+
 node* insertbst(node*&root,int val)
 {
     
@@ -64,6 +65,8 @@ node* insertbst(node*&root,int val)
 }
 void buildbst(node*&root)
 {
+    int num;
+    cin>>num;
     int val;
     cin>>val;
     while(val!=-1)
@@ -108,9 +111,12 @@ int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    node* root=NULL;
-    buildbst(root);
-    levelordertreversal(root); 
+    node* root1=NULL;
+    buildbst(root1);
+    levelordertreversal(root1);
+    
+    
+
     
 }
 

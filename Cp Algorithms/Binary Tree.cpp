@@ -1,34 +1,16 @@
-/*----------------------------------------------------------------------*/
 #include <bits/stdc++.h>
 using namespace std;
-
-/*----------------------------------------------------------------------------*/
-
 typedef long long ll;
-typedef vector<int> vi;
-
-/*----------------------------------------------------------------------------*/
-
-#define MOD 1e9 + 7
+#define MOD 1000000007
 #define pb push_back
 #define ppb pop_back
-#define f first
-#define s second
-#define nl "\n"
-#define pie 3.141592653589793238462
-#define set_bits(x) __builtin_popcountll(x)
+#define ff first
+#define ss second
+#define PI 3.141592653589793238462
+#define set_bits __builtin_popcountll
 #define all(x) (x).begin(), (x).end()
-#define debug(x) cerr<<x<<" "
-#define loop(i,a,b) for(int i=(a);i<(b);i++)
-#define printvector(x) for(auto i:(x)) cout<<(i)<<" "
+#define debug(x) cerr<<x<<" ";
 
-/*----------------------------------------------------------------------------*/
-
-template<typename T> T gcd(T a, T b) { return b ? gcd(b, a % b) : a; }
-template<typename T> T binpow(T base,T power){ ll ans=1; while(power){if(power&1) ans=ans*base; base=base*base; power>>=1;}return ans;}
-
-
-/*----------------------------------------------------------------------------*/
 class node
 {
     int val;
@@ -40,79 +22,37 @@ class node
         this->left=nullptr;
         this->right=nullptr;
     }
-}
-node*insertbst(node*&root,int val)
-{
-    
-    if(root==NULL)
-    {
-        node*temp=new node(val);
-        root=temp;
-        return root;
 
-    }
-    if(val>root->val)
-    {
-        root->right=insertbst(root->right,val);
-    }
-    else
-    {
-        root->left=insertbst(root->left,val);
-    }
-    return root;
 }
-void buildbst(node*&root)
+void builtree(int n,vector<int>&v)
 {
-    int val;
-    cin>>val;
-    while(val!=-1)
-    {
-        root=insertbst(root,val);
-        cin>>val;
-    }
-}
-void levelordertreversal(node*root)
-{
+    node*root=new node(v[0]);
     queue<node*>q;
-    q.push(root);
-    q.push(NULL);
-    while(!q.empty())
+    q.push(v[i]);
+    while(!q.empty()&&i<n)
     {
         node*temp=q.front();
         q.pop();
-        if(temp==NULL)
+        if(v[i]!=-1)
         {
-            cout<<endl;
-            if(!q.empty())
-            {
-                q.push(NULL);
-            }
-        }
-        else
-        {
-            cout<<temp->val<<" ";
-            if(temp->left)
-            {
-                q.push(temp->left);
-            }
-            if(temp->right)
-            {
-                q.push(temp->right);
-            }
+            temp->left=new node(v[i]);
         }
     }
 }
 
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    node* root=NULL;
-    buildbst(root);
-    levelordertreversal(root);
-    
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    node*root=NULL;
+    int n;
+    cin>>n;
+    vector<int>v;
+    for(int i=0;i<n;i++)
+    {
+        cin>>v[i];
+    }
 
-    
-    
+    root=builtree(n,v);
 }
 

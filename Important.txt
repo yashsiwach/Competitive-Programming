@@ -6,3 +6,10 @@
 6->fill(all(vec), 1); to fill the vector with the 1;
 7->iota(numbers.begin(), numbers.end(), 1); used to fill vector consecutive like 1,2,3..size must remember to define the size of the vector during insilise;
 8->binary_search(all(vec), key)- find the element in sort array;
+9->map in made by red black trees and unordered map is made by hashing table uorderd map can't store pair and other ds because it can't compare diff datastructures by hashing 
+10->use mulitset instead of priority queue
+11->lower_bound return the iterator of element if present and if not then its greater one!
+12-> upper_bound return the iterator of the elemen with is greatere then it;
+13->int set/map we use upper and lower bound diff as set.upper_bound(3); in vector upper_bound(v.begin(),v.end(),target);because working in vector is BS and in set its tree
+14->int sum=accumulate(v.begin(),v.end(),0(initial sum value)); to get sum of vector;
+//7986952804
