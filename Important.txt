@@ -13,3 +13,4 @@
 13->int set/map we use upper and lower bound diff as set.upper_bound(3); in vector upper_bound(v.begin(),v.end(),target);because working in vector is BS and in set its tree
 14->int sum=accumulate(v.begin(),v.end(),0(initial sum value)); to get sum of vector;
 //7986952804
+sweepline adhoc 
