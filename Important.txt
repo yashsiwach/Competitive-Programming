@@ -14,3 +14,4 @@
 14->int sum=accumulate(v.begin(),v.end(),0(initial sum value)); to get sum of vector;
 15-> transform(s.begin(), s.end(), s.begin(), ::tolower); to make string lower ;
 sweepline adhoc 
+16->s.erase(unique(s.begin(), s.end()), s.end()); to remove all duplicates of string or vector;
