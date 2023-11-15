@@ -15,3 +15,9 @@
 15-> transform(s.begin(), s.end(), s.begin(), ::tolower); to make string lower ;
 sweepline adhoc 
 16->s.erase(unique(s.begin(), s.end()), s.end()); to remove all duplicates of string or vector;
+17->print 
+vector<pair<int, int>> e(n);
+for (auto [x, y]: e) {
+  cerr << x << ' ' << y << '\n';
+}
+cerr << '\n';
