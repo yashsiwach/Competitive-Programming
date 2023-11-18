@@ -1,0 +1,6 @@
+->funtion overiding /method overiding means having same name of funtionn in both base and derived class and the funtion will show accoring to the object of which class called !!to solve this if obj is of b class to call a then obj.a::display() done!!
+->to change the constructors of the patent class using child as
+class c:public a,pubic b
+{
+	c(int q,int z,int s):a(z),b(s);done!!!
+}
