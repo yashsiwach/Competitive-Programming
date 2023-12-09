@@ -21,3 +21,4 @@ for (auto [x, y]: e) {
   cerr << x << ' ' << y << '\n';
 }
 cerr << '\n';
+18->xor of l to r range is even number of ele then twice xor is ==0;
