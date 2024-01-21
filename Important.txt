@@ -11,14 +11,15 @@
 11->lower_bound return the iterator of element if present and if not then its greater one!
 12-> upper_bound return the iterator of the elemen with is greatere then it;
 13->int set/map we use upper and lower bound diff as set.upper_bound(3); in vector upper_bound(v.begin(),v.end(),target);because working in vector is BS and in set its tree
+
 14->int sum=accumulate(v.begin(),v.end(),0(initial sum value)); to get sum of vector;
+
 15-> transform(s.begin(), s.end(), s.begin(), ::tolower); to make string lower ;
 sweepline adhoc 
+
 16->s.erase(unique(s.begin(), s.end()), s.end()); to remove all duplicates of string or vector;
-17->print 
-vector<pair<int, int>> e(n);
-for (auto [x, y]: e) {
-  cerr << x << ' ' << y << '\n';
-}
-cerr << '\n';
+
 18->xor of l to r range is even number of ele then twice xor is ==0;
+
+19->if (all_of(foo.begin(), foo.end(), [](int i){return i%2;}) )cout <<"sare odd h"<<endl;
+    else cout<<"sare odd nhi h "
