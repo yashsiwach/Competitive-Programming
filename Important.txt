@@ -23,3 +23,5 @@ sweepline adhoc
 
 19->if (all_of(foo.begin(), foo.end(), [](int i){return i%2;}) )cout <<"sare odd h"<<endl;
     else cout<<"sare odd nhi h "
+20->sum of first k odd elements =k^2 
+21-> to solve a%x=b%x so x=abs(a-b);
