@@ -1,0 +1,26 @@
+Hey,
+Can you please refer me for this SDE Role
+JobLink: xxxxxxx
+//                                            जय हरियाणा ♡
+
+
+I am Guardian, 2200+ rated in leetcode(top 1%), and 4* at CodeChef.
+Have projects with Nodejs, Expressjs, and, MongoDB,
+and possess excellent problem-solving skills and a Strong hold on core subjects.
+
+
+
+1 3 3  
+2 1 3
+5 1 3
+
+1  a max(max(b,c)+curr,max(a,b,c))
+2  b max(max(a,c,curr),max(a,b,c))
+3  c max(max(b,a,curr),max(a,b,c))
+
+1 8 10
+2 7 11
+5 5 11
+
+
+
