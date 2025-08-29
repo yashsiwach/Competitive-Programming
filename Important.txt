@@ -29,3 +29,6 @@ sweepline adhoc
  the greatest integer that cannot be written in the form am+bn
  for nonnegative integers a,b
  is mn−m−n
+
+CONCEPTS 
+1.to find the value of the base of x  eg 345 formula is 3*(base^2) + 4*(base^1) + 5*(base^0)
